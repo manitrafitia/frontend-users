@@ -1,15 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  <p>Follow this link</p>
-  <a routerLink="/components/list" routerLinkActve="active" ariaCurrentWhenActive="page">Liste components</a>
-  <a routerLink="/components/add" routerLinkActve="active" ariaCurrentWhenActive="page">Add component</a>
-</body>
-</html>
-
-<router-outlet />
+<div class="container">
+  <div class="m-4">
+    <h3>Rechercher</h3>
+    <form action="" class="form-group">
+      <label for="">Entrez votre id</label>
+      <input type="text" class="form-control">
+    </form>
+  </div>
+  <div class="row">
+    <div class="col-6">
+      <user-form />
+    </div>
+    <div class="col-6">
+      <users-component />
+   </div>
+  </div>
+</div>
